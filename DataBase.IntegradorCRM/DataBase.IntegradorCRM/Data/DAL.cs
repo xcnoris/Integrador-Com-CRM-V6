@@ -42,7 +42,7 @@ namespace DataBase.IntegradorCRM.Data
             catch (Exception Exception)
             {
                 MetodosGerais.RegistrarLog("Conexao", Exception.Message);
-                throw new Exception(Exception.Message);
+                return Enumerable.Empty<T>();
             }
         }
 

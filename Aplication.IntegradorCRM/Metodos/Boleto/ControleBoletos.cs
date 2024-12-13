@@ -88,7 +88,8 @@ namespace Aplication.IntegradorCRM.Metodos.Boleto
                             int diasAtraso = (DateTime.Now - linha.Data_Vencimento).Days;
                             int situacaTBRelacao = BoletoRelacao.Situacao;
 
-                            await BoletoServices.VerificarBoletosCriadosNoCRM(BoletoRelacao, diasAtraso, situacao, situacaTBRelacao, DadosAPI, AcoesSituacaoBoleto, BoletoAcoesCRM);
+                            MetodosGerais.RegistrarLog("BOLETO", $"DR  {BoletoRelacao.Id_DocumentoReceber} esta com a relação do vencimento em {diasAtraso}. Verificação foi iniciada...");
+                            BoletoServices.VerificarBoletosCriadosNoCRM(BoletoRelacao, diasAtraso, situacao, situacaTBRelacao, DadosAPI, AcoesSituacaoBoleto, BoletoAcoesCRM);
                         }
                     }
                 }
