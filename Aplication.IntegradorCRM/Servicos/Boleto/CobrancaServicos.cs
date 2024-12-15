@@ -48,6 +48,7 @@ namespace Aplication.IntegradorCRM.Servicos.Boleto
 
                 // Busca as cobranças que devem ser realiada
                 List<CobrancasNaSegundaModel?> ListCobrancas = (await dalCobranca.ListarAsync() ?? Enumerable.Empty<CobrancasNaSegundaModel>()).ToList();
+
                 if (ListCobrancas is not null)
                 {
                     MetodosGerais.RegistrarLog("COBRANCA", $"Nenhum Boleto para ser feita a cobrança!");

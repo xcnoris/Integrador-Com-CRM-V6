@@ -108,7 +108,8 @@ namespace Aplication.IntegradorCRM.Servicos.Boleto
                                 break;
 
                             default:
-                                MetodosGerais.RegistrarLog("BOLETO", $"Boleto já existe na tabela relação. Não está em atraso!");
+                                await RealizarCobrancas(AcoesBoletoList, diasAtraso, BoletoRelacao.DiasEmAtraso, BoletoRelacao, DadosAPI);
+                           
                                 break;
                         }
                     }

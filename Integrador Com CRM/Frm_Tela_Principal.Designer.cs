@@ -72,6 +72,16 @@
             notifyIcon1.Visible = true;
             notifyIcon1.MouseDoubleClick += notifyIcon1_MouseDoubleClick;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.ForeColor = SystemColors.Desktop;
+            label7.Location = new Point(770, 463);
+            label7.Name = "label7";
+            label7.Size = new Size(52, 15);
+            label7.TabIndex = 9;
+            label7.Text = "2.24.12.2";
+            // 
             // Frm_Tela_Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);

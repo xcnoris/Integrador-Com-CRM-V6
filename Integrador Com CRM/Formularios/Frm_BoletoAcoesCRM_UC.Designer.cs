@@ -147,7 +147,6 @@
             Txt_DiasCobrancas.Name = "Txt_DiasCobrancas";
             Txt_DiasCobrancas.Size = new Size(114, 23);
             Txt_DiasCobrancas.TabIndex = 7;
-            Txt_DiasCobrancas.KeyPress += Txt_DiasCobrancas_KeyPress;
             // 
             // label2
             // 

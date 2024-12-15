@@ -50,8 +50,7 @@ namespace Aplication.IntegradorCRM.Metodos.Boleto
                         DR.data_vencimento >= '01/12/2024'
                     AND 
 	                    DR.tem_boleto = 1
-                    AND 
-	                	ent.id_entidade = 1383
+	            order by DR.id_documento_receber
                 ";
 
                 // Converte o resultado do select em DataTable
